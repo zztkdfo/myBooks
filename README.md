@@ -17,3 +17,13 @@
 # 로그인 비동기 처리를 위한 리덕스 설치
 - npm i redux react-redux redux-saga redux-devtools-extension redux-actions
 - npm i @types/react-redux @types/redux-actions -D
+
+# 디자인 Antd 사용
+- npm i antd
+- npm i @ant-design/icons
+
+# api 통신
+- npm i axios
+
+# push
+- npm i connected-react-router
