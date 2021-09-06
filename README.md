@@ -13,3 +13,7 @@
 
 # 런타임 에러 발생시 에러 페이지로 이동(componentDidCatch를 이용하여 에러가 발생하게 되면 Error페이지로 fallback 처리)
 - npm i react-error-boundary
+
+# 로그인 비동기 처리를 위한 리덕스 설치
+- npm i redux react-redux redux-saga redux-devtools-extension redux-actions
+- npm i @types/react-redux @types/redux-actions -D
