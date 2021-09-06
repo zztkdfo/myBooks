@@ -1,4 +1,4 @@
-# 프로젝ㅌ 생성(React + typescript)
+# 프로젝트 생성(React + typescript)
 - npx create-react-app my-books --template typescript
   1. Could not find a declaration file for module 'react'. 오류 발생 시
     npm i --save @types/react @types/react-dom 설치하면됨
@@ -11,7 +11,9 @@
 - npm i react-router-dom
 - npm i --save-dev @types/react-router-dom
 
-# 런타임 에러 발생시 에러 페이지로 이동(componentDidCatch를 이용하여 에러가 발생하게 되면 Error페이지로 fallback 처리)
+# 에러처리
+- 런타임 에러 발생시 에러 페이지로 이동(componentDidCatch를 이용하여 에러가 발생하게 되면
+  Error페이지로 fallback 처리)
 - npm i react-error-boundary
 
 # 로그인 비동기 처리를 위한 리덕스 설치
