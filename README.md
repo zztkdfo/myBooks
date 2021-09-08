@@ -16,9 +16,12 @@
   Error페이지로 fallback 처리)
 - npm i react-error-boundary
 
-# 로그인 비동기 처리를 위한 리덕스 설치
+# 로그인 비동기 처리를 위한 리덕스 설치(redux-saga)
 - npm i redux react-redux redux-saga redux-devtools-extension redux-actions
 - npm i @types/react-redux @types/redux-actions -D
+- redux-saga를 사용하는 이유는 여러가지 제공하는 effect를 사용 하여 비동기 로직이나 사이드 이펙트가 생기는 로직들을 자유자재로 컨트롤 할 수 있음
+  (대표적으로 사용 예시는 api를 연속적으로 여러번 호출 하였는데 가장 마지막 응답만 사용하겠다 또는 첫번째 응답만 사용하겠다 등 이런식으로 여러 가지 사이드 이펙트를 자유자재로 컨트롤 할 수 있는 기능을 많이 제공하고 있음)
+- redux-actions는 리덕스의 대표 개발 패턴인 Duck Pattern을 쉽게 구현할 수 있도록 제공해줌 
 
 # 디자인 Antd 사용
 - npm i antd
@@ -27,5 +30,5 @@
 # api 통신
 - npm i axios
 
-# push
+# 리액트 라우터와 리덕스를 강력하게 연결하여 사용(history 사용하기 위함) 
 - npm i connected-react-router

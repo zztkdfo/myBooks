@@ -5,7 +5,6 @@ import UserService from '../../services/UserService';
 import TokenService from '../../services/TokenService';
 import { push } from "connected-react-router";
 
-
 const initAuthState: AuthState = {
   token: null,
   loading: false,
