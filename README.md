@@ -32,3 +32,6 @@
 
 # 리액트 라우터와 리덕스를 강력하게 연결하여 사용(history 사용하기 위함) 
 - npm i connected-react-router
+
+# 날짜 표현
+- npm i moment
