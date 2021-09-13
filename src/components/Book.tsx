@@ -1,15 +1,27 @@
-import { Link } from "react-router-dom"
-import {Tooltip, Button} from 'antd'
-import { BookOutlined, DeleteOutlined, EditOutlined, HomeOutlined } from '@ant-design/icons'
-import {BookType} from '../types'
+import { Link } from 'react-router-dom'
+import { Tooltip, Button } from 'antd'
+import {
+  BookOutlined,
+  DeleteOutlined,
+  EditOutlined,
+  HomeOutlined
+} from '@ant-design/icons'
+import { BookType } from '../types'
 import moment from 'moment'
 import styles from './Book.module.css'
 
 interface BookProps extends BookType {
-
+  deleteBook: (bookId: number) => void
 }
 
-const Book = ({bookId, title, author, createdAt, url}: BookProps) => {
+const Book = ({
+  bookId,
+  title,
+  author,
+  createdAt,
+  url,
+  deleteBook
+}: BookProps) => {
   return (
     <>
       <div className={styles.book}>
@@ -57,14 +69,18 @@ const Book = ({bookId, title, author, createdAt, url}: BookProps) => {
               type="primary"
               shape="circle"
               danger
-              icon={<DeleteOutlined />} 
+              icon={<DeleteOutlined />}
+              onClick={clickDelete}
             />
           </Tooltip>
         </div>
       </div>
     </>
-    
   )
-} 
+
+  function clickDelete() {
+    deleteBook(bookId)
+  }
+}
 
 export default Book
